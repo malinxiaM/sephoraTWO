@@ -1,0 +1,219 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    font: inherit;    vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {    line-height: 1;}ol, ul {    list-style: none;}blockquote, q {    quotes: none;}blockquote:before, blockquote:after,q:before, q:after {    content: '';    content: none;}table {    border-collapse: collapse;    border-spacing: 0;}
+body{
+    font-size:12px;
+}
+a{
+    text-decoration: none;
+}
+.headerWrap{
+    width:100%;
+    height:89px;
+    background:url(../../images/logIn/logo.png) no-repeat left 58px center;
+    cursor: pointer;
+    
+}
+.bodyBg{
+    min-width:1190px;
+    float:left;
+    width:100%;
+    height:610px;
+    background:url("https://ssl1.sephorastatic.cn/wcsfrontend/campaign/campaign_img/2018/12/banner/hp_loginlage_20181227.jpg") center;
+}
+
+.bodyMiddle,.imgShow{
+    width: 1190px;
+    height:610px;
+    position:absolute;
+    z-index:1;
+   
+}
+.main{
+    width:360px;
+    height:380px;
+    background:#fff;
+    margin:115px 0 0 800px;
+    position:absolute;
+    z-index: 2;
+}
+.mainMiddle{
+    width:300px;
+    height:380px;
+    margin:0 auto;
+}
+.head{
+    width:100%;
+    height:20px;
+    float:left;
+    line-height:20px;
+    font-size:16px;
+    letter-spacing: 1px;
+    margin:26px 0 0;
+    color:#000;
+}
+.tip{
+    width:300px;
+    height:32px;
+    line-height:32px;
+    float:left;
+    font-size:12px;
+}
+.inputCombie {
+    width:300px;
+    height:32px;
+    float:left;
+    margin-top:20px;
+}
+.first{
+    margin-top:8px;
+}
+.user{
+    background-position:0 -20px;
+}
+.password{
+    background-position:0 0;
+}
+.inputCombie .iconfont{
+    font-size:25px;
+    margin:6px 0 0 7px;
+    position:absolute;
+   font-size:24px;
+}
+.sepInput{
+    width:300px;
+    height:32px;
+    float:left;
+}
+.sepInput input{
+    border:1px solid #ccc;
+    text-indent:20px;
+    width:298px;
+    height:30px;
+}
+.searchPassword{
+    width:300px;
+    height:50px;
+    line-height:50px;
+    float:left;
+    color:#919191;
+}
+.error-notic{
+	color: #ff4e00;
+	display: none;
+}
+.confirmButton2{
+    width:300px;
+    height:40px;
+    line-height:40px;
+    background:#999;
+    color:#fff;
+    float:left;
+    font-size:16px;
+    letter-spacing:2px;
+    text-align:center;
+}
+.userArgeeBox{
+    margin:5px 0 0;
+    width:300px;
+    height:20px;
+    float:left;
+}
+.userArgeeCheck{
+    float:left;
+    width:16px;
+    height:16px;
+    margin:2px 2px 0 0;
+}
+.userArgeeBox input{
+    border:0;
+    vertical-align: baseline;
+    outline:0;
+}
+.userArgeeBox p{
+    display:inline-block;
+    color:#919191;
+    margin-top:3px;
+}
+.freeRegister{
+    width:300px;
+    height:50px;
+    line-height:50px;
+    float:left;
+    color:#919191;
+    text-align:right;
+}
+.mixedlogin{
+    float:left;
+    width:100px;
+    height:50px;
+}
+.mixedlogin ul li{
+    float:left;
+    width:24px;
+    height:24px;
+    cursor:pointer;
+    margin-left:8px;
+}
+.mixedlogin .iconfont{
+    font-size:24px;
+    
+}
+.rightArraw{
+    background-image: url(https://ssl1.sephorastatic.cn/soa/pc/images/LoginIn-icon.png);
+    margin:22px 0 0 6px;
+    width:4px;
+    height:8px;
+    float:right;
+    background-position:-52px 0;
+}
+.red{
+    color:#f12526;
+    cursor:pointer;
+}
+.clearFix{
+    zoom:1;
+}
+.clearFix:after{
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+.footer{
+    width:100%;
+    height:102px;
+    background:#000;
+}
+.content{
+    width:1190px;
+    margin:0 auto;
+    padding:30px 0;
+    text-align:center;
+}
+.content-center{
+    height:42px;
+    vertical-align: middle;
+    display:inline-block;
+    padding:0 22px;
+    color:#6f6f6f;
+}
+.declaration{
+    height:21px;
+    line-height:21px;
+    text-align:center;
+}
+.footer-records{
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/footer-redords-icon.png) no-repeat;
+    padding-left:30px;
+}
+.content a{
+    color:#6f6f6f;
+    font-size:14px;
+    margin:0 22px;
+}
+.declaration-info{
+    height:21px;
+    line-height:21px;
+}

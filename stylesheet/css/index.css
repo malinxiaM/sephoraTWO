@@ -1,0 +1,994 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    font: inherit;    vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {    line-height: 1;}ol, ul {    list-style: none;}blockquote, q {    quotes: none;}blockquote:before, blockquote:after,q:before, q:after {    content: '';    content: none;}table {    border-collapse: collapse;    border-spacing: 0;}
+
+img{
+    vertical-align: middle;
+    border:0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background:#f5f5f5;
+    font-size:12px;
+    font-family:arial,Microsoft YaHei,tahoma,Hiragino Sans GB;
+}
+li{
+    vertical-align: baseline;
+}
+.floatL{
+    display:inline;
+   float:left;
+}
+.floatR{
+    display:inline;
+   float:right;
+}
+/* top */
+.top-wrap{
+    width:100%;
+    height:30px;
+    background:#000;
+}
+.content{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+   
+}
+.content-left{
+    width:420px;
+    height:30px;
+    float:left;
+    line-height:30px;
+}
+.content-left a{
+    color:#fff;
+    margin:0 12px;
+}
+.content-left a:hover{
+    color:#e00;
+}
+.content-left .nored:hover{
+    color:#fff;
+}
+.line{
+    display:inline-block;
+    height:16px;
+    border-left:1px solid #ccc;
+    vertical-align:sub;
+}
+.content-right{
+    position:relative;
+    float:right;
+}
+.content-right>span{
+    margin-left:22px;
+    position:relative;
+    height:30px;
+    line-height:30px;
+    display:inline-block;
+}
+.content-right a:hover{
+    color:#e00;
+}
+.my-sephora-logo{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin-right:6px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/my-sephora.png) no-repeat;
+    background-size:100% 100%;
+    vertical-align:middle;
+    margin-top:-2px;
+}
+.my-sephora{
+    color:#fff;
+}
+.icon{
+    width:9px;
+    height:4px;
+    display:inline-block;
+    margin-left:5px;
+    background-position:-3px -16px;
+    margin-bottom:3px;
+    
+}
+.angle{
+    background-image:url(https://ssl1.sephorastatic.cn/soa/pc/images/top_angle_w.png);
+    content:" ";
+}
+._hover{
+    display:none;
+    position:absolute;
+    top:24px;
+    left:40px;
+    padding-top:7px;
+    border-bottom:1px solid #c8c8c8;
+    background-repeat:no-repeat;
+}
+.vipClub{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin-right:6px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/vip-club.png);
+    background-size:100% 100%;
+    vertical-align: middle;
+    margin-top:-2px;
+}
+.mobileSephora{
+    display:inline-block;
+    width:7px;
+    height:12px;
+    margin-right:6px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/mobile-sephora.png);
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+/* search */
+
+.search-info{
+    width:100%;
+    background:#fff;
+}
+.search-content{
+    width:1190px;
+    margin:0 auto;
+    padding:24px 0 0;
+    position:relative;
+}
+.clearFix{
+    zoom:1;
+}
+.clearFix:after{
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+.search-logo{
+    width:320px;
+    height:36px;
+}
+
+.search-logo a{
+    margin:2px 0;
+    height:32px;
+    float:left;
+}
+.search-logo a img{
+    width:100%;
+    height:100%;
+}
+.searchBox{
+    height:60px;
+    position:relative;
+    z-index:1;
+}
+.module-search{
+    width:650px;
+    height:36px;
+    display:inline-block;
+} 
+.search-inputBox{
+    position:relative;
+    z-index:10;
+}
+.module-search-main{
+    width:540px;
+    height:34px;
+    background:#fff;
+    float:left;
+}
+.module-search-main input{
+    width:540px;
+    height:30px;
+    line-height:34px;
+    padding-left:20px;
+    font-size:12px;
+   
+}
+.module-search-focus{
+    display:none;
+    border:1px solid #c8c8c8;
+    border-top:none;
+    width:540px;
+    margin-left:-1px;
+    background-color:#fff;
+}
+.search-submit{
+    float:left;
+    width:90px;
+    height:34px;
+    border:1px solid #000;
+    background:#000;
+    border-left:0;
+    border-right:0;
+    cursor:pointer;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    line-height:34px;
+} 
+.hotWord{
+    padding:3px 0 0;
+    position:relative;
+    z-index:1;
+    margin-left:-5px;
+}
+.hotWord a{
+    display:inline-block;
+    padding:0 4px;
+    font-size:12px;
+    color:#acacac;
+}
+.hotWord a:hover{
+    color:#e00;
+}
+.minCart-Wrap{
+    width:209px;
+    height:36px;
+    cursor:pointer;
+    position:relative;
+    z-index:10;
+}
+
+.minCart-main{
+    width:188px;
+    height:34px;
+    border:1px solid #ddd;
+    float:right;
+    background:#fff;
+    line-height:34px;
+    font-size:16px;
+    color:#666;
+    text-align:center;
+}
+.minCart-main em{
+    width:18px;
+    height:26px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:10px;
+    margin-left:10px;
+}
+.shopping-bag{
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/shopping_bag.png);
+    content: "";
+}
+.shopping-num{
+    color:#d1152a;
+    padding:0 5px;
+}
+.minCart-main span{
+    display:inline-block;
+    vertical-align:middle;
+}
+.shopping-quality{
+    position:absolute;
+    right:0;
+    bottom:-33px;
+}
+.shopping-quality img{
+    width:153px;
+    height:40px;
+   
+}
+/* nav */
+#navigation{
+    min-width:1190px;
+    position:relative;
+    z-index:10;
+}
+.nav-info{
+    background-color:#fff;
+    width:100%;
+}
+.nav-info-content{
+    width:1190px;
+    margin:0 auto;
+    position:relative;
+    height:36px;
+}
+.content-menu{
+    float:left;
+    width:240px;
+    height:36px;
+    line-height:36px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/classified.png);
+    background-size: 100% 100%;
+}
+.menu-link{
+    color:#fff;
+    margin-left:15px;
+    font-size:16px;
+}
+.menu-list{
+    width:240px;
+    height:auto;
+    float:left;
+    background:#fff;
+    position:relative;
+    height:550px;
+    z-index:10;
+}
+.heart-left{
+    top:30px;
+    left:-37px;
+    background-position:0 5px;
+    width:55px;
+    height:55px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/navigation_sprite_wrap.png) no-repeat;
+    content: "";
+    background-size:100%;
+}
+.activity{
+    position:absolute;
+}
+.navigation-col{
+    min-height:320px;
+    height:550px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    position:relative;
+}
+.navigation-col>li{
+    padding:8px 0 8px 15px;
+    display:block;
+    background:#fff;
+    line-height:20px;
+    border-bottom:1px solid #f5f5f5;
+}
+.navigation-col>li.active span{
+    /* position:absolute;
+    top:0;
+    right:-5px; */
+    position:absolute;
+    margin-top:-8px;
+    margin-left:220px;
+    background:#fff;
+    z-index:99;
+    /* display:none; */
+    width:10px;
+    height:61px;
+}
+.navigation-col li>a.title{
+    font-weight:700;
+}
+.navigation-col li>a{
+    color:#000;
+    line-height:22px;
+    font-size:14px;
+    margin-right:10px;
+    display:block;
+}
+.navigation-col li ul li{
+    display:inline-block;
+    margin-right:10px;
+    position:relative;
+}
+.navigation-col li ul li a{
+    font-size:12px;
+    color:#8a8a8a;
+    margin-right:0;
+}
+.navigation-col li ul li a:hover{
+    color:#e00;
+}
+.heart-right{
+    top:315px;
+    left:197px;
+    z-index:1000;
+    width:55px;
+    height:55px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/navigation_sprite_wrap.png) no-repeat;
+    content: "";
+    background-position:-29px -100px;
+    background-size:200%;
+}
+.navigation-content-hover{
+    position:absolute;
+    /* display:none; */
+    width:950px;
+    background:#fff;
+    height:550px;
+    left:240px;
+    top:0;
+    padding:32px 40px 40px 30px;
+    box-sizing:border-box;
+    box-shadow:0 0 5px rgba(0,0,0,.2);
+    z-index:10;
+}
+/* .content-hover-infoWrap{
+    width:880px;
+    background:#fff;
+    height:478px;
+} */
+.content-hover-info{
+    float:left;
+    width:600px;
+}
+.content-hover-info-title{
+    display:block;
+    margin-bottom:20px;
+    height:39px;
+    padding-bottom:17px;
+    overflow:hidden;
+    border-bottom:1px solid #eee;
+}
+.content-hover-info-title a{
+    font-size:18px;
+    line-height:39px;
+    font-weight:400;
+    color:#000;
+}
+.content-hover-category{
+    height:350px;
+    width:600px;
+    float:left;
+    overflow:hidden;
+}
+.content-hover-category>ul{
+    width:160px;
+    margin-right:40px;
+    min-height:200px;
+    display:block;
+    float:left;
+    
+}
+.content-hover-category>ul.last{
+    margin-right:0;
+}
+.content-hover-category>ul>ul>li{
+    height:22px;
+}
+.content-hover-category>ul>ul>li a{
+    line-height:22px;
+    margin-right:10px;
+    font-size:12px;
+    color:#8a8a8a;
+}
+.content-hover-category>ul>ul>li .first-a{
+    font-size:14px;
+    color:#000;
+}
+.logoAdPosition{
+    padding:0 0 50px;
+    float:left;
+    background:#ccc;
+}
+.adPosition{
+    float:right;
+    width:270px;
+    height:470px;
+    background:#f03359;
+}
+.adPosition img{
+    width:100%;
+}
+.content-quick{
+    min-width:760px;
+    float:left;
+    height:36px;
+    line-height:42px;
+}
+
+.menu-row{
+    height:42px;
+    padding-left:40px;
+}
+.menu-row>li{
+    height:42px;
+    margin-right:40px;
+    display:inline-block;
+    position:relative;
+}
+.menu-row>li>a{
+    color:#000;
+    font-size:16px;
+}
+.menu-row>li>a:hover{
+    color:#e00;
+}
+/* banner */
+#Banner{
+    min-width:1190px;
+    height:400px;
+    background-color:#fff;
+    position:relative;
+    /* z-index:1; */
+}
+#Banner .swiper-button-prev{
+    position:absolute;
+    left:252px;
+    right:auto;
+    top:50%;
+    width:27px;
+    height:85px;
+    margin-top:-22px;
+    z-index:10;
+    cursor:pointer;
+    background-size:22px 27px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:rgba(0,0,0,.15)
+}
+#Banner .swiper-button-next{
+    position:absolute;
+    right:10px;
+    left:auto;
+    top:50%;
+    width:27px;
+    height:85px;
+    margin-top:-22px;
+    z-index:10;
+    cursor:pointer;
+    background-size:22px 27px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:rgba(0,0,0,.15)
+}
+#Banner .swiper-wrapper{
+    width:1190px;
+    height:400px;
+    position:relative;
+}
+#Banner .swiper-button-hidden {
+    opacity:0;
+}
+#Banner .swiper-container:hover .swiper-button-hidden{
+    opacity:1;
+}
+.swiper-container{
+    width:1190px;
+    margin:0 auto;
+}
+.banner-background img{
+    width:1190px;
+    height:100%;
+
+}
+.swiper-pagination-customs{
+    width:100px;
+    height:4px;
+    display: inline-block; 
+    background: #000; 
+    opacity: .3; 
+    margin: 0 5px; 
+}
+.swiper-pagination-customs-active{
+    opacity:1;
+    background-color:#fff;
+}
+/* weekSpecial */
+#WeekSpecial{
+    min-width:1190px;
+    margin-top:10px;
+    overflow:hidden;
+}
+.weekSpecial-info{
+    width:1190px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.weekSpecial-content{
+    margin-left:250px;
+    height:140px;
+    display:block;
+    clear:both;
+}
+.content-left{
+    width:340px;
+    float:left;
+}
+.content-left img{
+    width:340px;
+    height:140px;
+}
+.content-right:{
+    float:right;
+}
+.content-right img{
+    width:290px;
+    height:140px;
+    margin-left:10px;
+    float:left;
+    display:block;
+}
+
+ /* ALLBRANDS  */
+ .brand-title{
+     height:36px;
+     margin:10px 0;
+     margin-bottom:3px;
+     
+ }
+ .brand-content{
+     width:1190px;
+     height:36px;
+     margin:0 auto;
+     position:relative;
+ }
+ .brand-content-left{
+     float:left;
+     width:387px;
+     height:36px;
+     background:url(https://ssl1.sephorastatic.cn/soa/pc/images/sprite_title.png) no-repeat;
+     content: "";
+     background-position:-20px -13px;
+     background-size:100%;
+ }
+ .module-tabList{
+     float:right;
+     height:36px;
+     position:absolute;
+     right:0;
+     bottom:-7px;
+ }
+ .module-tabList li{
+    display:inline-block;
+    line-height:36px;
+    cursor:pointer;
+ }
+ .module-tabList li.active a{
+     font-weight:bolder;
+     color:#000;
+ }
+ .module-tabList li a{
+     font-size:14px;
+     color:#474747;
+ }
+ .module-tabList li a:hover{
+    font-weight:bolder;
+    color:#000;
+ }
+ .module-tabList li em{
+     margin:0 12px ;
+     color:#dadada;
+ }
+ #Brand .brand-body{
+    height:317px;
+    margin-bottom:80px;
+ }
+ .brand-body-content{
+     height:320px;
+     width:1190px;
+     margin:0 auto;
+    
+ }
+ .module-carousel{
+     overflow:hidden;
+     position:relative;
+ }
+ .module-carousel .swiper-container{
+    width:590px;
+    height:320px;
+ }
+ .module-carousel img{
+    width:590px;
+    height:320px;
+ }
+ .module-carousel .swiper-pagination-customs{
+    width:50px;
+    height:4px;
+    display: inline-block; 
+    background: #000; 
+    opacity: .3; 
+    margin: 0 5px; 
+}
+.module-carousel .swiper-pagination-customs-active{
+    opacity:1;
+    background-color:#fff;
+}
+#Brand .module-carousel .swiper-button-prev{
+    position:absolute;
+    left:0;
+    right:auto;
+    top:50%;
+    width:27px;
+    height:85px;
+    margin-top:-22px;
+    z-index:10;
+    cursor:pointer;
+    background-size:22px 27px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:rgba(0,0,0,.15)
+}
+#Brand .module-carousel .swiper-button-next{
+    position:absolute;
+    right:0;
+    left:auto;
+    top:50%;
+    width:27px;
+    height:85px;
+    margin-top:-22px;
+    z-index:10;
+    cursor:pointer;
+    background-size:22px 27px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:rgba(0,0,0,.15)
+}
+#Brand .module-carousel .swiper-button-hidden {
+    opacity:0;
+}
+#Brand .module-carousel .swiper-container:hover .swiper-button-hidden{
+    opacity:1;
+}
+.brand-body-right{
+    width:600px;
+    display:block;
+    height:320px;
+}
+.moudle_tabGroupList{
+    position:relative;
+}
+.tabGroupList_show{
+    opacity:1;
+    z-index:10;
+}
+.moudle_tabGroupList ul{
+    height:320px;
+    transition-duration:1.2s;
+    display:block;
+    position:absolute;
+    /* opacity:0; */
+    z-index:1;
+}
+.moudle_tabGroupList ul li{
+    width:149px;
+    height:79px;
+    border-right:1px solid #f5f5f5;
+    border-bottom:1px solid #f5f5f5;
+    display:inline-block;
+    overflow:hidden;
+    position:relative;
+    background:#fff;
+    float:left;
+}
+
+.moudle_tabGroupList ul li a img{
+    width:100%;
+    height:100%;
+}
+.module_tabGroupList_hover{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:rgba(0,0,0,.8);
+    padding-top:12px;
+    display:none;
+}
+.module_tabGroupList_banner{
+    color:#fff;
+    text-align:center;
+    height:28px;
+    line-height:28px;
+
+}
+.moudle_tabGroupList ul li .Logo{
+    width:144px;
+    height:60px;
+    display:block;
+    margin:5px auto;
+    background:#fff;
+}
+.moudle_tabGroupList .module_tabGroupList_link{
+    display:block;
+    width:84px;
+    height:20px;
+    text-align:center;
+    color:#fff;
+    background:#e00;
+    line-height:18px;
+    border-radius:12px;
+    margin:0 auto;
+}
+.moudle_tabGroupList ul li:hover .module_tabGroupList_hover{
+    display:block;
+}
+#picks{
+    min-width:1190px;
+    position:relative;
+}
+.picks-title{
+    width:100%;
+    height:36px;
+    margin:0;
+}
+.picks-content{
+    height:36px;
+    width:1190px;
+    margin:0 auto;
+}
+.picks-content-left{
+    /* float:left; */
+    width:387px;
+    height:36px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/sprite_title.png) no-repeat;
+    content: "";
+    background-position:-20px -47px;
+    background-size:100%;
+}
+.picks-info{
+    width:100%;
+    min-height:200px;
+}
+.picks-info-content{
+    width:1190px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.picks-info-content-list{
+    float:left;
+    width:590px;
+    height:300px;
+    display:inline-block;
+    background:#fff;
+    margin-right:10px;
+    margin-bottom:10px;
+    position:relative;
+}
+.picks-list-double{
+    margin-right:0;
+}
+.picks-info-content-list img{
+    width:100%;
+    height:100%;
+}
+.picks-list-product{
+    position:absolute;
+    width:210px;
+    top:10px;
+    right:10px;
+}
+.picks-list-product li{
+    height:130px;
+    margin-bottom:1px;
+    position:relative;
+    background:#fff;
+    padding:10px 0 0 10px;
+}
+.picks-list-product li a{
+    display:block;
+    height:100%;
+    width:100%;
+}
+.picks-product-brand{
+    font-weight:bolder;
+    color:#000;
+}
+.picks-product-content{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:#000;
+}
+.picks-product-price{
+    color:#000;
+    position:absolute;
+    margin:25px 0 0 -160px;
+    z-index:1;
+}
+.picks-product-brand,.picks-product-content,.picks-product-price{
+    width:160px;
+    font-size:14px;
+    line-height:20px;
+    text-align:left;
+    display:inline-block;
+}
+.picks-list-product li a img{
+    position:absolute;
+    width:90px;
+    height:90px;
+    bottom:0;
+    right:5px;
+    transition-duration:.3s;
+    transition-timing-function:ease-out;
+}
+.picks-list-product li:hover img{
+    right:10px;
+}
+._categorg{
+    min-width:1190px;
+    margin-top:80px;
+}
+._categorg-title{
+    height:36px;
+    margin:10px 0;
+    margin-bottom:3px;
+}
+._categorg-content{
+    width:1190px;
+    margin:0 auto;
+    height:36px;
+    position:relative;
+}
+._categorg-content-left{
+    width:387px;
+    height:36px;
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/sprite_title.png) no-repeat;
+    content: "";
+    background-position:-20px -78px;
+    background-size:100%;
+}
+._category-body{
+    height:500px;
+    margin-bottom:10px;
+}
+._category-body-content{
+    width:1190px;
+    margin:0 auto;
+    height:500px;
+}
+._category-body-content-left{
+    width:390px;
+    height:500px;
+}
+._category-body-content-left img{
+    height:100%;
+    width:100%;
+}
+.moudle_categoryProduct{
+    width:800px;
+    height:500px;
+    border-left:1px solid #f5f5f5;
+    border-bottom:1px solid #f5f5f5;
+    box-sizing:border-box;
+    background:#fff;
+}
+.module_categoryProduct_li:first-child, .module_categoryProduct_li:nth-child(5){
+    width:199px;
+}
+.module_categoryProduct_li{
+    padding:15px 0 15px 10px;
+    width:200px;
+    height:250px;
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+    border-right:1px solid #f5f5f5;
+    border-top:1px solid #f5f5f5;
+    box-sizing:border-box;
+    float:left;
+}
+.module_categoryProduct_img{
+    position:absolute;
+    width:180px;
+    height:180px;
+    right:-5px;
+    bottom:0;
+    transition-duration:.3s;
+    transition-timing-function:ease-out;
+    z-index:1;
+}
+.module_categoryProduct_img img{
+    width:100%;
+    height:100%;
+}
+.module_categoryProduct_content{
+    line-height:18px;
+}
+.module_categoryProduct_brand{
+    font-weight:bolder;
+}
+.module_categoryProduct_content{
+    display:block;
+    font-size:14px;
+    color:#000;
+    position:relative;
+    z-index:10;
+}
+.module_categoryProduct_price{
+    color:#000;
+    margin-top:4px;
+}
+.module_categoryProduct_li:hover .module_categoryProduct_img{
+    right:10px;
+}

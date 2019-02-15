@@ -1,0 +1,242 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    font: inherit;    vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {    line-height: 1;}ol, ul {    list-style: none;}blockquote, q {    quotes: none;}blockquote:before, blockquote:after,q:before, q:after {    content: '';    content: none;}table {    border-collapse: collapse;    border-spacing: 0;}
+body{
+    font-size:12px;
+    line-height:16px;
+    color:#000;
+    font-family:arial,Microsoft YaHei,tahoma,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.headerWrap{
+    width:100%;
+    height:89px;
+    background:#fff;
+    
+}
+.headerMain{
+    width:1190px;
+    height:89px;
+    margin:0 auto;  
+}
+.headerLogo{
+    width:250px;
+    height:33px;
+    margin:28px 0 0 ;
+    float:left;
+    cursor:pointer;
+    background:url("https://ssl1.sephorastatic.cn/soa/pc/images/search_logo.png");
+}
+.headerMain span{
+    float:left;
+    display:block;
+    font-size:16px;
+    letter-spacing:1px;
+    color:#333;
+    margin:45px 0 0 30px;
+}
+.goLogin{
+    float:right;
+    margin-top:30px;
+}
+.goLogin p{
+    float:left;
+    color:#9d9d9d;
+}
+.goLogin ul {
+    float:left;
+}
+.goLogin ul li:first-of-type{
+    coloc:#000;
+}
+.goLogin ul li{
+    float:left;
+}
+.goLogin ul li:nth-of-type(2){
+    width:0;
+    height:0;
+    border-top:4px solid transparent;
+    border-left:5px solid #000;
+    border-bottom:4px solid transparent;
+    float:left;
+    margin-top:5px;
+    margin-left:2px;
+}
+.bodyBg{
+    float:left;
+    width:100%;
+    min-width:1190px;
+    height:804px;
+    background:transparent url("https://ssl1.sephorastatic.cn/soa/pc/images/loginsSearchPassword_Bg.jpg") no-repeat scroll 50% 0;
+}
+.bodyMiddle{
+    margin:0 auto;
+    width:1190px;
+    height:804px;
+}
+.main{
+    width:730px;
+    float:left;
+}
+.mt64{
+    margin-top:64px;
+}
+.ml80{
+    margin-left:80px;
+}
+.verify>p{
+    width:100px;
+    height:32px;
+    font-size:14px;
+    float:left;
+    line-height:32px;
+    margin-right:10px;
+    text-align:center;
+}
+.sepInput{
+    float:left;
+    width:300px;
+    height:32px;
+    background:#fff;
+}
+.sepInput input{
+    border:1px solid #ccc;
+    text-indent:20px;
+    width:298px;
+    height:30px;
+}
+.image{
+    width:120px;
+    height:32px;
+    float:left;
+    margin-left:10px;
+    cursor:pointer;
+}
+.errorTip{
+    float:left;
+    width:620px;
+    margin-left:110px;
+    height:34px;
+    line-height:24px;
+    color:#f00;
+}
+.cur{
+    background:#ccc;
+    color:#fff;
+    width:120px;
+}
+button{
+    cursor: default;
+}
+.button{
+    margin-left:10px;
+    width:120px;
+    height:32px;
+    border:none;
+    color:#fff;
+    font-size:14px;
+    float:left;
+    transition:all .5s;
+}
+.confirmButton{
+    border:none;
+    margin-left:110px;
+    width:300px;
+    height:30px;
+    line-height:30px;
+    background:#999;
+    color:#fff;
+    float:left;
+    font-size:14px;
+    letter-spacing:2px;
+    text-align:center;
+}
+.read{
+    float:left;
+    margin-left:110px;
+    width:300px;
+    height:30px;
+    line-height:30px;
+    color:#9d9d9d;
+}
+.read p{
+    float:left;
+    cursor:pointer;
+}
+.read ul{
+    float:right;
+    cursor:pointer;
+}
+.read ul li:first-of-type{
+    color:#9d9d9d;
+}
+.read ul li{
+    float:left;
+}
+.read ul li:nth-of-type(2){
+    width:0;
+    height:0;
+    border-top:4px solid transparent;
+    border-left:5px solid #9d9d9d;
+    border-bottom: 4px solid transparent;
+    float: left;
+    margin-top: 11px;
+    margin-left: 2px;
+}
+.clearFix{
+    zoom:1;
+}
+.clearFix:after{
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+#Footer{
+    min-width:1190px;
+    height:102px;
+    margin-top:80px;
+}
+#Footer.mt0{
+    margin-top:0;
+}
+.footer{
+    width:100%;
+    background:#000;
+    z-index:10;
+}
+.content{
+    width:1190px;
+    margin:0 auto;
+    padding:30px 0;
+    text-align:center;
+}
+.content-center{
+    height:42px;
+    vertical-align: middle;
+    display:inline-block;
+    padding:0 22px;
+    color:#6f6f6f;
+}
+.declaration{
+    height:21px;
+    line-height:21px;
+    text-align:center;
+}
+.footer-records{
+    background:url(https://ssl1.sephorastatic.cn/soa/pc/images/footer-redords-icon.png) no-repeat;
+    padding-left:30px;
+}
+.content a{
+    color:#6f6f6f;
+    font-size:14px;
+    margin:0 22px;
+}
+.declaration-info{
+    height:21px;
+    line-height:21px;
+}
